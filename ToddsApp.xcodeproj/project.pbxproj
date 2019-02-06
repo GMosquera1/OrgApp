@@ -15,6 +15,9 @@
 		052EC66F21AF811A005FEA32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 052EC66D21AF811A005FEA32 /* LaunchScreen.storyboard */; };
 		052EC67A21AF8283005FEA32 /* CommsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052EC67921AF8283005FEA32 /* CommsData.swift */; };
 		052EC67D21AF92CD005FEA32 /* CGDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052EC67C21AF92CD005FEA32 /* CGDetailViewController.swift */; };
+		05B82D7E220A311200ED1508 /* DataPersistanceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B82D7D220A311200ED1508 /* DataPersistanceManager.swift */; };
+		05B82D81220A317400ED1508 /* Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B82D80220A317400ED1508 /* Items.swift */; };
+		05B82D83220A319800ED1508 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B82D82220A319800ED1508 /* ItemModel.swift */; };
 		05FB843521B07D1B0023E8AB /* Questions.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 05FB843421B07D1B0023E8AB /* Questions.rtf */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +32,9 @@
 		052EC67021AF811A005FEA32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		052EC67921AF8283005FEA32 /* CommsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommsData.swift; sourceTree = "<group>"; };
 		052EC67C21AF92CD005FEA32 /* CGDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGDetailViewController.swift; sourceTree = "<group>"; };
+		05B82D7D220A311200ED1508 /* DataPersistanceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPersistanceManager.swift; sourceTree = "<group>"; };
+		05B82D80220A317400ED1508 /* Items.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Items.swift; sourceTree = "<group>"; };
+		05B82D82220A319800ED1508 /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
 		05FB843421B07D1B0023E8AB /* Questions.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Questions.rtf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				052EC66821AF8119005FEA32 /* Main.storyboard */,
+				05B82D7F220A314100ED1508 /* File Manager Services */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -104,8 +111,18 @@
 				052EC67921AF8283005FEA32 /* CommsData.swift */,
 				05FB843421B07D1B0023E8AB /* Questions.rtf */,
 				0510815521B887A200F3A78E /* CalendarViewController.swift */,
+				05B82D80220A317400ED1508 /* Items.swift */,
+				05B82D82220A319800ED1508 /* ItemModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		05B82D7F220A314100ED1508 /* File Manager Services */ = {
+			isa = PBXGroup;
+			children = (
+				05B82D7D220A311200ED1508 /* DataPersistanceManager.swift */,
+			);
+			path = "File Manager Services";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,7 +199,10 @@
 			files = (
 				0510815621B887A200F3A78E /* CalendarViewController.swift in Sources */,
 				052EC66721AF8119005FEA32 /* CGViewController.swift in Sources */,
+				05B82D83220A319800ED1508 /* ItemModel.swift in Sources */,
 				052EC66521AF8119005FEA32 /* AppDelegate.swift in Sources */,
+				05B82D7E220A311200ED1508 /* DataPersistanceManager.swift in Sources */,
+				05B82D81220A317400ED1508 /* Items.swift in Sources */,
 				052EC67A21AF8283005FEA32 /* CommsData.swift in Sources */,
 				052EC67D21AF92CD005FEA32 /* CGDetailViewController.swift in Sources */,
 			);
@@ -333,7 +353,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9DV268QUJB;
 				INFOPLIST_FILE = ToddsApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -352,7 +372,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9DV268QUJB;
 				INFOPLIST_FILE = ToddsApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
