@@ -83,7 +83,7 @@ class ContainerController: UIViewController {
     func didSelectMenuOption(menuOption: MenuOption) {
         switch menuOption {
             
-        case .Discover:
+        case .Events:
         let discover = DiscoverViewController()
         let discView = DiscoverView()
         let redView = RedView()
@@ -94,11 +94,11 @@ class ContainerController: UIViewController {
 //        view.willRemoveSubview(centerController.view)
 //        centerController = UINavigationController.init(rootViewController: discover)
 //        view.addSubview(centerController.view)
-        case .Moments:
+        case .People:
             print("show moment")
-        case .Messages:
+        case .Email:
             print("show messages")
-        case .Profile:
+        case .Reminders:
             print("show profile")
         }
     }
@@ -122,14 +122,16 @@ extension ContainerController: HomeControllerDelegate {
         guard let discover = centerController.children.first as? HomeController,
         let menuCategories = menuCategories else { return }
         switch  menuCategories {
-        case .discover:
+        case .events:
             discover.discoverPageOn()
-        case .moments:
-            discover.momentsPageOn()
         case .profile:
+            discover.momentsPageOn()
+        case .email:
             discover.profilePageOn()
-        default:
+        case .reminders:
             discover.defaultPageOn()
+        default:
+           print("nothing left to see")
         }
     }
     

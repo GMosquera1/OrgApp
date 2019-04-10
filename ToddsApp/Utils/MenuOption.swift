@@ -9,27 +9,27 @@
 import UIKit
 
 enum MenuOption: Int, CustomStringConvertible {
-    case Discover
-    case Moments
-    case Messages
-    case Profile
+    case Events
+    case People
+    case Email
+    case Reminders
     
     var description: String {
         switch self {
-        case .Discover: return "Events"
-        case .Moments: return "People"
-        case .Messages: return "Email"
-        case .Profile: return "Reminders"
+        case .Events: return "Events"
+        case .People: return "People"
+        case .Email: return "Email"
+        case .Reminders: return "Reminders"
             
         }
     }
     
     var image: UIImage  {
         switch self {
-        case .Discover: return UIImage(named: "icons8-ask-question-25") ?? UIImage()
-        case .Moments: return UIImage(named: "icons8-account-25") ?? UIImage()
-        case .Messages: return UIImage(named: "icons8-ask-question-25") ?? UIImage()
-        case .Profile: return UIImage(named: "icons8-account-25") ?? UIImage()
+        case .Events: return UIImage(named: "icons8-ask-question-25") ?? UIImage()
+        case .People: return UIImage(named: "icons8-account-25") ?? UIImage()
+        case .Email: return UIImage(named: "icons8-ask-question-25") ?? UIImage()
+        case .Reminders: return UIImage(named: "icons8-account-25") ?? UIImage()
             
         }
     }
