@@ -10,6 +10,10 @@
 		05103C0F2256A96B00047034 /* MenuOptionsCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05103C0E2256A96B00047034 /* MenuOptionsCellTableViewCell.swift */; };
 		05103C112257BB8E00047034 /* MenuOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05103C102257BB8E00047034 /* MenuOption.swift */; };
 		0510815621B887A200F3A78E /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0510815521B887A200F3A78E /* CalendarViewController.swift */; };
+		05256F64225E4B6A0060B9B1 /* MenuCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05256F63225E4B6A0060B9B1 /* MenuCategories.swift */; };
+		05256F6A225E92A30060B9B1 /* NewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05256F69225E92A30060B9B1 /* NewView.swift */; };
+		05256F6C225E9F460060B9B1 /* InheritedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05256F6B225E9F460060B9B1 /* InheritedViewController.swift */; };
+		05256F6E225E9FD10060B9B1 /* inheritView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05256F6D225E9FD10060B9B1 /* inheritView.swift */; };
 		052EC66521AF8119005FEA32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052EC66421AF8119005FEA32 /* AppDelegate.swift */; };
 		052EC66721AF8119005FEA32 /* CGViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052EC66621AF8119005FEA32 /* CGViewController.swift */; };
 		052EC66A21AF8119005FEA32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 052EC66821AF8119005FEA32 /* Main.storyboard */; };
@@ -34,6 +38,10 @@
 		05103C0E2256A96B00047034 /* MenuOptionsCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuOptionsCellTableViewCell.swift; sourceTree = "<group>"; };
 		05103C102257BB8E00047034 /* MenuOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuOption.swift; sourceTree = "<group>"; };
 		0510815521B887A200F3A78E /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		05256F63225E4B6A0060B9B1 /* MenuCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCategories.swift; sourceTree = "<group>"; };
+		05256F69225E92A30060B9B1 /* NewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewView.swift; sourceTree = "<group>"; };
+		05256F6B225E9F460060B9B1 /* InheritedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InheritedViewController.swift; sourceTree = "<group>"; };
+		05256F6D225E9FD10060B9B1 /* inheritView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = inheritView.swift; sourceTree = "<group>"; };
 		052EC66121AF8119005FEA32 /* ToddsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToddsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		052EC66421AF8119005FEA32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		052EC66621AF8119005FEA32 /* CGViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGViewController.swift; sourceTree = "<group>"; };
@@ -123,6 +131,9 @@
 				05B3CC71225699CF008A65D2 /* MenuController.swift */,
 				052EC66621AF8119005FEA32 /* CGViewController.swift */,
 				059DA418225BF17F00D6E531 /* RedView.swift */,
+				05256F69225E92A30060B9B1 /* NewView.swift */,
+				05256F6D225E9FD10060B9B1 /* inheritView.swift */,
+				05256F6B225E9F460060B9B1 /* InheritedViewController.swift */,
 				059DA41A225BF28500D6E531 /* DiscoverViewController.swift */,
 				059DA41C225BF2BE00D6E531 /* DiscoverView.swift */,
 				052EC67B21AF828A005FEA32 /* Models */,
@@ -148,6 +159,7 @@
 				05B3CC742256A1D5008A65D2 /* Protocols.swift */,
 				05103C0E2256A96B00047034 /* MenuOptionsCellTableViewCell.swift */,
 				05103C102257BB8E00047034 /* MenuOption.swift */,
+				05256F63225E4B6A0060B9B1 /* MenuCategories.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -236,13 +248,17 @@
 				0510815621B887A200F3A78E /* CalendarViewController.swift in Sources */,
 				059DA41D225BF2BE00D6E531 /* DiscoverView.swift in Sources */,
 				05103C0F2256A96B00047034 /* MenuOptionsCellTableViewCell.swift in Sources */,
+				05256F6C225E9F460060B9B1 /* InheritedViewController.swift in Sources */,
 				059DA419225BF17F00D6E531 /* RedView.swift in Sources */,
 				052EC66721AF8119005FEA32 /* CGViewController.swift in Sources */,
 				05B82D83220A319800ED1508 /* ItemModel.swift in Sources */,
 				059DA41B225BF28500D6E531 /* DiscoverViewController.swift in Sources */,
 				05B3CC752256A1D5008A65D2 /* Protocols.swift in Sources */,
+				05256F6A225E92A30060B9B1 /* NewView.swift in Sources */,
 				052EC66521AF8119005FEA32 /* AppDelegate.swift in Sources */,
 				05B3CC70225699C5008A65D2 /* HomeController.swift in Sources */,
+				05256F6E225E9FD10060B9B1 /* inheritView.swift in Sources */,
+				05256F64225E4B6A0060B9B1 /* MenuCategories.swift in Sources */,
 				05B3CC72225699CF008A65D2 /* MenuController.swift in Sources */,
 				05B82D7E220A311200ED1508 /* DataPersistanceManager.swift in Sources */,
 				05103C112257BB8E00047034 /* MenuOption.swift in Sources */,

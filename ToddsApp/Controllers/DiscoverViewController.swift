@@ -11,6 +11,7 @@ import UIKit
 class DiscoverViewController: UIViewController {
  
     let discoverView = DiscoverView()
+    let redView = RedView()
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -45,9 +45,13 @@ class ContainerController: UIViewController {
         //addChild(centerController)
         centerController.didMove(toParent: self)
     }
+    
+    
+    
     func configureMenuController() {
         if menuController == nil {
             menuController = MenuController()
+            //menuController.menuDelegate = self
             menuController.delegate = self
             view.insertSubview(menuController.view, at: 0)
             addChild(menuController)
@@ -82,13 +86,14 @@ class ContainerController: UIViewController {
         case .Discover:
         let discover = DiscoverViewController()
         let discView = DiscoverView()
+        let redView = RedView()
+//        view.willRemoveSubview(centerController.view)
+//            view.addSubview(centerController.view )
+//        //view.addSubview(centerController.view)
+        
 //        view.willRemoveSubview(centerController.view)
 //        centerController = UINavigationController.init(rootViewController: discover)
 //        view.addSubview(centerController.view)
-            
-        view.willRemoveSubview(centerController.view)
-        centerController = UINavigationController.init(rootViewController: discover)
-        view.addSubview(discView)
         case .Moments:
             print("show moment")
         case .Messages:
@@ -106,12 +111,30 @@ class ContainerController: UIViewController {
 }
 
 extension ContainerController: HomeControllerDelegate {
-    func handleMenuToggle(forMenuOption menuOption: MenuOption?) {
+    func handleMenuToggle(forMenuOption menuOption: MenuOption?, menuCategories: MenuCategories?) {
         
         if !isExpanded {
             configureMenuController()
         }
         isExpanded = !isExpanded
         animatePanel(shouldExpand: isExpanded, menuOption: menuOption)
+        
+        guard let discover = centerController.children.first as? HomeController,
+        let menuCategories = menuCategories else { return }
+        switch  menuCategories {
+        case .discover:
+            discover.discoverPageOn()
+        case .moments:
+            discover.momentsPageOn()
+        case .profile:
+            discover.profilePageOn()
+        default:
+            discover.defaultPageOn()
+        }
     }
+    
+   
+
+   
 }
+

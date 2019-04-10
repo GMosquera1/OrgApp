@@ -16,10 +16,10 @@ enum MenuOption: Int, CustomStringConvertible {
     
     var description: String {
         switch self {
-        case .Discover: return "Discover"
-        case .Moments: return "Moments"
-        case .Messages: return "Messages"
-        case .Profile: return "Profile"
+        case .Discover: return "Events"
+        case .Moments: return "People"
+        case .Messages: return "Email"
+        case .Profile: return "Reminders"
             
         }
     }
