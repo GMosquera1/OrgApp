@@ -21,6 +21,9 @@
 		052EC66F21AF811A005FEA32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 052EC66D21AF811A005FEA32 /* LaunchScreen.storyboard */; };
 		052EC67A21AF8283005FEA32 /* CommsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052EC67921AF8283005FEA32 /* CommsData.swift */; };
 		052EC67D21AF92CD005FEA32 /* CGDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052EC67C21AF92CD005FEA32 /* CGDetailViewController.swift */; };
+		05522F01226BC9A0007B112D /* UpcomingEventsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05522F00226BC9A0007B112D /* UpcomingEventsCell.swift */; };
+		05522F03226BCA06007B112D /* UpcomingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05522F02226BCA06007B112D /* UpcomingViewController.swift */; };
+		05522F05226BCA55007B112D /* UpcomingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05522F04226BCA55007B112D /* UpcomingView.swift */; };
 		059DA419225BF17F00D6E531 /* RedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059DA418225BF17F00D6E531 /* RedView.swift */; };
 		059DA41B225BF28500D6E531 /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059DA41A225BF28500D6E531 /* DiscoverViewController.swift */; };
 		059DA41D225BF2BE00D6E531 /* DiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059DA41C225BF2BE00D6E531 /* DiscoverView.swift */; };
@@ -31,6 +34,7 @@
 		05B82D7E220A311200ED1508 /* DataPersistanceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B82D7D220A311200ED1508 /* DataPersistanceManager.swift */; };
 		05B82D81220A317400ED1508 /* Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B82D80220A317400ED1508 /* Items.swift */; };
 		05B82D83220A319800ED1508 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B82D82220A319800ED1508 /* ItemModel.swift */; };
+		05E7D7B9226B9A4C00082BAC /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E7D7B8226B9A4C00082BAC /* SettingsViewController.swift */; };
 		05FB843521B07D1B0023E8AB /* Questions.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 05FB843421B07D1B0023E8AB /* Questions.rtf */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +55,9 @@
 		052EC67021AF811A005FEA32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		052EC67921AF8283005FEA32 /* CommsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommsData.swift; sourceTree = "<group>"; };
 		052EC67C21AF92CD005FEA32 /* CGDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGDetailViewController.swift; sourceTree = "<group>"; };
+		05522F00226BC9A0007B112D /* UpcomingEventsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingEventsCell.swift; sourceTree = "<group>"; };
+		05522F02226BCA06007B112D /* UpcomingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingViewController.swift; sourceTree = "<group>"; };
+		05522F04226BCA55007B112D /* UpcomingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingView.swift; sourceTree = "<group>"; };
 		059DA418225BF17F00D6E531 /* RedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedView.swift; sourceTree = "<group>"; };
 		059DA41A225BF28500D6E531 /* DiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
 		059DA41C225BF2BE00D6E531 /* DiscoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverView.swift; sourceTree = "<group>"; };
@@ -61,6 +68,7 @@
 		05B82D7D220A311200ED1508 /* DataPersistanceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPersistanceManager.swift; sourceTree = "<group>"; };
 		05B82D80220A317400ED1508 /* Items.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Items.swift; sourceTree = "<group>"; };
 		05B82D82220A319800ED1508 /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
+		05E7D7B8226B9A4C00082BAC /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		05FB843421B07D1B0023E8AB /* Questions.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Questions.rtf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -117,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				052EC66821AF8119005FEA32 /* Main.storyboard */,
+				05522F04226BCA55007B112D /* UpcomingView.swift */,
 				05B82D7F220A314100ED1508 /* File Manager Services */,
 			);
 			path = Views;
@@ -127,6 +136,7 @@
 			children = (
 				052EC67C21AF92CD005FEA32 /* CGDetailViewController.swift */,
 				05B3CC6D225699BA008A65D2 /* ContainerController.swift */,
+				05E7D7B8226B9A4C00082BAC /* SettingsViewController.swift */,
 				05B3CC6F225699C5008A65D2 /* HomeController.swift */,
 				05B3CC71225699CF008A65D2 /* MenuController.swift */,
 				052EC66621AF8119005FEA32 /* CGViewController.swift */,
@@ -135,6 +145,7 @@
 				05256F6D225E9FD10060B9B1 /* inheritView.swift */,
 				05256F6B225E9F460060B9B1 /* InheritedViewController.swift */,
 				059DA41A225BF28500D6E531 /* DiscoverViewController.swift */,
+				05522F02226BCA06007B112D /* UpcomingViewController.swift */,
 				059DA41C225BF2BE00D6E531 /* DiscoverView.swift */,
 				052EC67B21AF828A005FEA32 /* Models */,
 			);
@@ -158,6 +169,7 @@
 			children = (
 				05B3CC742256A1D5008A65D2 /* Protocols.swift */,
 				05103C0E2256A96B00047034 /* MenuOptionsCellTableViewCell.swift */,
+				05522F00226BC9A0007B112D /* UpcomingEventsCell.swift */,
 				05103C102257BB8E00047034 /* MenuOption.swift */,
 				05256F63225E4B6A0060B9B1 /* MenuCategories.swift */,
 			);
@@ -245,6 +257,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05522F03226BCA06007B112D /* UpcomingViewController.swift in Sources */,
 				0510815621B887A200F3A78E /* CalendarViewController.swift in Sources */,
 				059DA41D225BF2BE00D6E531 /* DiscoverView.swift in Sources */,
 				05103C0F2256A96B00047034 /* MenuOptionsCellTableViewCell.swift in Sources */,
@@ -258,12 +271,15 @@
 				052EC66521AF8119005FEA32 /* AppDelegate.swift in Sources */,
 				05B3CC70225699C5008A65D2 /* HomeController.swift in Sources */,
 				05256F6E225E9FD10060B9B1 /* inheritView.swift in Sources */,
+				05E7D7B9226B9A4C00082BAC /* SettingsViewController.swift in Sources */,
 				05256F64225E4B6A0060B9B1 /* MenuCategories.swift in Sources */,
 				05B3CC72225699CF008A65D2 /* MenuController.swift in Sources */,
 				05B82D7E220A311200ED1508 /* DataPersistanceManager.swift in Sources */,
 				05103C112257BB8E00047034 /* MenuOption.swift in Sources */,
 				05B82D81220A317400ED1508 /* Items.swift in Sources */,
+				05522F01226BC9A0007B112D /* UpcomingEventsCell.swift in Sources */,
 				052EC67A21AF8283005FEA32 /* CommsData.swift in Sources */,
+				05522F05226BCA55007B112D /* UpcomingView.swift in Sources */,
 				052EC67D21AF92CD005FEA32 /* CGDetailViewController.swift in Sources */,
 				05B3CC6E225699BA008A65D2 /* ContainerController.swift in Sources */,
 			);

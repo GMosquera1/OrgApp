@@ -44,6 +44,8 @@ class HomeController: UIViewController {
         contentView = UIView.init(frame: UIScreen.main.bounds)
         contentView.addSubview(discover)
         view.addSubview(contentView)
+           self.navigationItem.title = "Discover"
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Discover", style: .plain, target: nil, action: nil)
     }
     
     
@@ -53,6 +55,8 @@ class HomeController: UIViewController {
         contentView = UIView.init(frame: UIScreen.main.bounds)
         contentView.addSubview(moments)
         view.addSubview(contentView)
+        self.navigationItem.title = "Moments"
+              self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Moments", style: .plain, target: nil, action: nil)
     }
     func profilePageOn() {
         let profile = NewView.init()
@@ -60,10 +64,13 @@ class HomeController: UIViewController {
         contentView = UIView.init(frame: UIScreen.main.bounds)
         contentView.addSubview(profile)
         view.addSubview(contentView)
+           self.navigationItem.title = "Profile"
+              self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Profile", style: .plain, target: nil, action: nil)
     }
     func defaultPageOn() {
         let defaultPage = inheritView.init()
         contentView.removeFromSuperview()
+           self.navigationItem.title = "Default"
         contentView = UIView.init(frame: UIScreen.main.bounds)
         contentView.addSubview(defaultPage)
         view.addSubview(contentView)

@@ -22,7 +22,6 @@ class MenuOptionsCell: UITableViewCell {
         let label = UILabel()
         label.textColor = .white
         label.font = UIFont.systemFont(ofSize: 16)
-        label.text = "Pan, Lechuga, y Tomate"
         return label
         
     }()
@@ -31,6 +30,7 @@ class MenuOptionsCell: UITableViewCell {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
         backgroundColor = .red
+        selectionStyle = .none 
         
         addSubview(iconImageView)
         iconImageView.translatesAutoresizingMaskIntoConstraints = false

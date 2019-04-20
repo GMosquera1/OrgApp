@@ -95,7 +95,8 @@ class ContainerController: UIViewController {
 //        centerController = UINavigationController.init(rootViewController: discover)
 //        view.addSubview(centerController.view)
         case .People:
-            print("show moment")
+            let controller = SettingsViewController()
+            present(UINavigationController(rootViewController: controller), animated: true, completion: nil)
         case .Email:
             print("show messages")
         case .Reminders:
