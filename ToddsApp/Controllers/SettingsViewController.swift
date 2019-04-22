@@ -28,7 +28,7 @@ class SettingsViewController: UIViewController {
         view.backgroundColor = .white
         navigationController?.navigationBar.barTintColor = .darkGray
         navigationController?.navigationBar.prefersLargeTitles = true
-        navigationItem.title = "Settings"
+        navigationItem.title = "Pop-Up Alert"
         navigationController?.navigationBar.barStyle = .black
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "icons8-plus-math-filled-30").withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: #selector(handleDismiss))
     }
