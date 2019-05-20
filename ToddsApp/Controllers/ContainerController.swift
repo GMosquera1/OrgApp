@@ -123,14 +123,14 @@ extension ContainerController: HomeControllerDelegate {
         guard let discover = centerController.children.first as? HomeController,
         let menuCategories = menuCategories else { return }
         switch  menuCategories {
+        case .email:
+            discover.emailPageOn()
         case .events:
             discover.eventsPageOn()
-        case .profile:
-            discover.momentsPageOn()
-        case .email:
-            discover.profilePageOn()
+        case .people:
+            discover.peoplePageOn()
         case .reminders:
-            discover.defaultPageOn()
+            discover.remindersPageOn()
         default:
            print("nothing left to see")
         }

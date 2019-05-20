@@ -10,5 +10,5 @@ import Foundation
 
 
 enum MenuCategories {
-    case events, profile, email, reminders 
+    case  email, events, people, reminders
 }

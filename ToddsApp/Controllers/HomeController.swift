@@ -17,6 +17,12 @@ class HomeController: UIViewController {
     var delegate: HomeControllerDelegate?
     // MARK: - Init
     
+    
+    let attrs = [
+        NSAttributedString.Key.foregroundColor: UIColor.white,
+        NSAttributedString.Key.font: UIFont(name: "Georgia-Italic", size: 28)!
+    ]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
@@ -33,7 +39,7 @@ class HomeController: UIViewController {
     func configureNavigationBar() {
         navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.08366606385, green: 0.1091798767, blue: 0.3090982139, alpha: 1)
         navigationController?.navigationBar.barStyle = .black
-        
+        navigationController?.navigationBar.titleTextAttributes = attrs
         navigationItem.title = "Welcome"
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "hamburgerMenu").withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: #selector(handleMenuToggle))
     }
@@ -44,35 +50,35 @@ class HomeController: UIViewController {
         contentView = UIView.init(frame: UIScreen.main.bounds)
         contentView.addSubview(events)
         view.addSubview(contentView)
-           self.navigationItem.title = "Upcoming Events"
+           self.navigationItem.title = "Events"
 //self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Events", style: .plain, target: nil, action: nil)
     }
     
     
-    func momentsPageOn() {
-        let moments = RedView.init()
+    func emailPageOn() {
+        let emails = RedView.init()
         contentView.removeFromSuperview()
         contentView = UIView.init(frame: UIScreen.main.bounds)
-        contentView.addSubview(moments)
+        contentView.addSubview(emails)
         view.addSubview(contentView)
-        self.navigationItem.title = "Moments"
-              self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Moments", style: .plain, target: nil, action: nil)
+        self.navigationItem.title = "Draft Email"
+              self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Draft Email", style: .plain, target: nil, action: nil)
     }
-    func profilePageOn() {
+    func peoplePageOn() {
         let profile = NewView.init()
         contentView.removeFromSuperview()
         contentView = UIView.init(frame: UIScreen.main.bounds)
         contentView.addSubview(profile)
         view.addSubview(contentView)
-           self.navigationItem.title = "Profile"
-              self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Profile", style: .plain, target: nil, action: nil)
+           self.navigationItem.title = "People"
+              self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "People", style: .plain, target: nil, action: nil)
     }
-    func defaultPageOn() {
-        let defaultPage = inheritView.init()
+    func remindersPageOn() {
+        let remindersPage = inheritView.init()
         contentView.removeFromSuperview()
-           self.navigationItem.title = "Default"
+           self.navigationItem.title = "Reminders"
         contentView = UIView.init(frame: UIScreen.main.bounds)
-        contentView.addSubview(defaultPage)
+        contentView.addSubview(remindersPage)
         view.addSubview(contentView)
     }
     

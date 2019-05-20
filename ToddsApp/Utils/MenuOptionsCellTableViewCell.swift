@@ -21,8 +21,8 @@ class MenuOptionsCell: UITableViewCell {
     let descriptionLabel: UILabel = {
         let label = UILabel()
         label.textColor = .white // changes font
-        label.font = UIFont.systemFont(ofSize: 18)
-        label.font = UIFont.init(name: "Zapfino", size: 18)
+        label.font = UIFont.systemFont(ofSize: 22)
+        label.font = UIFont.init(name: "Georgia-Italic", size: 22)
         return label
         
     }()
@@ -37,8 +37,8 @@ class MenuOptionsCell: UITableViewCell {
         iconImageView.translatesAutoresizingMaskIntoConstraints = false
         iconImageView.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
         iconImageView.leftAnchor.constraint(equalTo: leftAnchor, constant: 12).isActive = true
-        iconImageView.heightAnchor.constraint(equalToConstant: 24).isActive = true
-        iconImageView.widthAnchor.constraint(equalToConstant: 24).isActive = true
+        iconImageView.heightAnchor.constraint(equalToConstant: 30).isActive = true
+        iconImageView.widthAnchor.constraint(equalToConstant: 30).isActive = true
         
         addSubview(descriptionLabel)
         descriptionLabel.translatesAutoresizingMaskIntoConstraints = false

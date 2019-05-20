@@ -20,26 +20,17 @@ class MenuController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureTableView()
-        addGradient()
     }
 
     // MARK: - Handlers
-    private var gradient: CAGradientLayer!
-    
-    private func addGradient(){
-        let firstColor = UIColor.init(red: 255/255, green: 0/255, blue: 0/255, alpha: 1)
-        let secondColor = UIColor.init(red: 255/255, green: 255/255, blue: 255/255, alpha: 1)
-        gradient = CAGradientLayer()
-        gradient.colors = [firstColor.cgColor, secondColor.cgColor]
-        self.tableView.layer.insertSublayer(gradient, at: 0)
-    }
+
     func configureTableView() {
         tableView = UITableView()
         tableView.delegate = self
         tableView.dataSource = self
         
         tableView.register(MenuOptionsCell.self, forCellReuseIdentifier: reuseIdentifier)
-   tableView.backgroundColor = #colorLiteral(red: 0.1294117719, green: 0.2156862766, blue: 0.06666667014, alpha: 1)
+   tableView.backgroundColor = #colorLiteral(red: 0.4039215686, green: 0.4352941176, blue: 0.3294117647, alpha: 1)
  //   #colorLiteral(red: 0.9403156638, green: 0.7390406728, blue: 0.7834907174, alpha: 1) // changes all of the view
         
         tableView.separatorStyle = .none
@@ -73,10 +64,10 @@ extension MenuController: UITableViewDataSource, UITableViewDelegate {
         delegate?.handleMenuToggle(forMenuOption: menuOption, menuCategories: .events)
         }
         if indexPath.row == 1 {
-            delegate?.handleMenuToggle(forMenuOption: menuOption, menuCategories: .profile)
+            delegate?.handleMenuToggle(forMenuOption: menuOption, menuCategories: .email)
         }
         if indexPath.row == 2 {
-            delegate?.handleMenuToggle(forMenuOption: menuOption, menuCategories: .email)
+            delegate?.handleMenuToggle(forMenuOption: menuOption, menuCategories: .people)
         }
         if indexPath.row == 3 {
             delegate?.handleMenuToggle(forMenuOption: menuOption, menuCategories: .reminders)
