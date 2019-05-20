@@ -11,12 +11,14 @@ import EventKit
 
 class DiscoverView: UIView {
 
-        let placeholderText = "Enter reminder(s)"
+        let placeholderText = "Enter Event(s)"
+    
         public lazy var toDoLabel: UILabel = {
             let label = UILabel()
             label.textAlignment = .center
-            label.font = UIFont(name: "thonburi", size: 20)
-            label.text = "Enter Reminder"
+            label.font = UIFont(name: "museo", size: 25)
+            label.font = UIFont.systemFont(ofSize: 25, weight: .semibold)
+            label.text = "Enter Event"
             return label
         }()
         
@@ -25,6 +27,7 @@ class DiscoverView: UIView {
             textView.backgroundColor = #colorLiteral(red: 0.09883943945, green: 0.0765587464, blue: 0.4475694299, alpha: 0.7132384418)
             textView.textColor = .white
             textView.text = placeholderText
+            textView.font = UIFont(descriptor: .init(name: "museo", size: 18) , size: 18)
             return textView
         }()
         
@@ -41,10 +44,10 @@ class DiscoverView: UIView {
         
         public lazy var addNoteButton: UIButton = {
             let addButton = UIButton()
-            addButton.setTitle("Add Reminder", for: .normal)
+            addButton.setTitle("Add Event", for: .normal)
             addButton.setTitleColor(.black, for: .normal)
-            addButton.titleLabel?.font = UIFont.init(name: "thonburi", size: 18)
-            addButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 18)
+            addButton.titleLabel?.font = UIFont.init(name: "thonburi", size: 25)
+            addButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 25)
             //        addButton.addTarget(self, action: #selector(addNewNote), for: .touchUpInside)
             return addButton
         }()

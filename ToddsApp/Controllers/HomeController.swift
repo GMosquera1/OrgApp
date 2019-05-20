@@ -31,21 +31,21 @@ class HomeController: UIViewController {
         delegate?.handleMenuToggle(forMenuOption: nil, menuCategories: nil)
     }
     func configureNavigationBar() {
-        navigationController?.navigationBar.barTintColor = .red
+        navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.08366606385, green: 0.1091798767, blue: 0.3090982139, alpha: 1)
         navigationController?.navigationBar.barStyle = .black
         
-        navigationItem.title = "Menu"
+        navigationItem.title = "Welcome"
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "hamburgerMenu").withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: #selector(handleMenuToggle))
     }
     
-    func discoverPageOn() {
-        let discover = DiscoverView.init()
+    func eventsPageOn() {
+        let events = DiscoverView.init()
         contentView.removeFromSuperview()
         contentView = UIView.init(frame: UIScreen.main.bounds)
-        contentView.addSubview(discover)
+        contentView.addSubview(events)
         view.addSubview(contentView)
-           self.navigationItem.title = "Discover"
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Discover", style: .plain, target: nil, action: nil)
+           self.navigationItem.title = "Upcoming Events"
+//self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Events", style: .plain, target: nil, action: nil)
     }
     
     

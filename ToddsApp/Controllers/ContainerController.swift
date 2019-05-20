@@ -124,7 +124,7 @@ extension ContainerController: HomeControllerDelegate {
         let menuCategories = menuCategories else { return }
         switch  menuCategories {
         case .events:
-            discover.discoverPageOn()
+            discover.eventsPageOn()
         case .profile:
             discover.momentsPageOn()
         case .email:

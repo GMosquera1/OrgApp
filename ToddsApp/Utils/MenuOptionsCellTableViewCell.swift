@@ -20,8 +20,9 @@ class MenuOptionsCell: UITableViewCell {
     
     let descriptionLabel: UILabel = {
         let label = UILabel()
-        label.textColor = .white
-        label.font = UIFont.systemFont(ofSize: 16)
+        label.textColor = .white // changes font
+        label.font = UIFont.systemFont(ofSize: 18)
+        label.font = UIFont.init(name: "Zapfino", size: 18)
         return label
         
     }()
@@ -29,8 +30,8 @@ class MenuOptionsCell: UITableViewCell {
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
-        backgroundColor = .red
-        selectionStyle = .none 
+        backgroundColor = .clear //changes to box
+        selectionStyle = .gray
         
         addSubview(iconImageView)
         iconImageView.translatesAutoresizingMaskIntoConstraints = false

@@ -20,16 +20,28 @@ class MenuController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureTableView()
+        addGradient()
     }
-    
+
     // MARK: - Handlers
+    private var gradient: CAGradientLayer!
+    
+    private func addGradient(){
+        let firstColor = UIColor.init(red: 255/255, green: 0/255, blue: 0/255, alpha: 1)
+        let secondColor = UIColor.init(red: 255/255, green: 255/255, blue: 255/255, alpha: 1)
+        gradient = CAGradientLayer()
+        gradient.colors = [firstColor.cgColor, secondColor.cgColor]
+        self.tableView.layer.insertSublayer(gradient, at: 0)
+    }
     func configureTableView() {
         tableView = UITableView()
         tableView.delegate = self
         tableView.dataSource = self
         
         tableView.register(MenuOptionsCell.self, forCellReuseIdentifier: reuseIdentifier)
-        tableView.backgroundColor = .red
+   tableView.backgroundColor = #colorLiteral(red: 0.1294117719, green: 0.2156862766, blue: 0.06666667014, alpha: 1)
+ //   #colorLiteral(red: 0.9403156638, green: 0.7390406728, blue: 0.7834907174, alpha: 1) // changes all of the view
+        
         tableView.separatorStyle = .none
         tableView.rowHeight = 80
         
